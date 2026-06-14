@@ -1,14 +1,16 @@
-\# ADR 0002: Local Notifications for Reminder Functionality
+ADR 2 — Hardware (Local Notifications)
 
 
 
-\## Status
+Status
+
+
 
 Accepted
 
 
 
-\## Context
+Context
 
 
 
@@ -16,49 +18,63 @@ Schedinuity is a study planner application that allows students to create tasks 
 
 
 
-\## Decision
+Decision
 
 
 
-The application will use local notifications provided by the mobile device operating system. Notifications will be scheduled when users create reminders and will be delivered at the specified time, even when the application is not actively running.
+Use local notifications provided by the mobile device operating system. Notifications will be scheduled when users create reminders and will be delivered at the specified time, even when the application is not actively running.
 
 
 
-\## Consequences
+Consequences
 
 
 
-\### Positive
-
-\- Supports the core reminder functionality of the application.
-
-\- Works without requiring a backend server.
-
-\- Functions even when the application is closed.
-
-\- Fits within the project scope and timeline.
+Easier:
 
 
 
-\### Negative
+\* Supports the core reminder functionality of the application.
 
-\- Requires users to grant notification permissions.
+\* Works without requiring a backend server.
 
-\- Notification behavior may vary slightly between Android and iOS devices.
+\* Functions even when the application is closed.
+
+\* Fits within the project scope and timeline.
+
+\* Improves user productivity and organization.
 
 
 
-\## Alternatives Considered
+More difficult:
 
 
 
-\### Remote Push Notifications
+\* Requires users to grant notification permissions.
+
+\* Notification behavior may vary slightly between Android and iOS devices.
+
+\* Notifications are limited to the local device.
+
+
+
+Alternatives Considered
+
+
+
+Remote Push Notifications
+
+
 
 Rejected because a backend server would increase complexity and development time.
 
 
 
-\### No Notification System
+No Notification System
+
+
 
 Rejected because reminders are a core feature of the application.
+
+
 
