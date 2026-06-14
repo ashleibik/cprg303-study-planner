@@ -10,7 +10,7 @@ Instructor: Jacob Koep
 
 ## Stack
 - React Native (Expo)
-- React Navigation (bottom tabs)
+- React Navigation (tabs)
 - Expo Notifications (local push)
 - Expo SQLite + SQLCipher (local encrypted storage)
 
